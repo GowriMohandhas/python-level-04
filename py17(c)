@@ -1,0 +1,20 @@
+print("Sum of N Number")
+print("---------------")
+
+SN = int(input("Enter the starting number: "))
+EN = int(input("Enter the ending number: "))
+D = int(input("Enter the difference: "))
+
+print("\nResult")
+print("Series:")
+
+count = 0
+total = 0
+
+for i in range(SN, EN + 1, D):   
+    print("+" + str(i))          
+    total = total + i
+    count = count + 1
+
+print("Sum value:", total)
+print("Count value:", count)
