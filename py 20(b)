@@ -1,0 +1,19 @@
+print("Prime Number Generation")
+print("-----------------------")
+
+sn = int(input("Enter the starting number: "))
+en = int(input("Enter the ending number: "))
+print("Result")
+
+for n in range(sn, en + 1):
+    count = 0
+    if n > 1:  # only numbers >1 can be prime
+        for i in range(2, n):
+            if n % i == 0:
+                count += 1
+        if count == 0:
+            print(n, "is Prime")
+        else:
+            print(n, "is not Prime")
+    else:
+        print(n, "is not Prime")
